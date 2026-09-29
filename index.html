@@ -13,7 +13,7 @@
   <nav aria-label="Hauptnavigation">
     <ul>
       <li><a href="index.html" aria-current="page">Start</a>
-      </li><li><a href="termine.html">Termine</a>
+      </li><li><a href="termine.html">Termine</a></li>
       <!-- </li><li><a href="spielregeln.html">Spielart</a></li>-->
     </ul></nav>
 </div></header>
@@ -24,10 +24,10 @@
     <!-- <a class="btn" href="#join-h">Mitspielen</a> -->
     <!-- <a class="btn ghost" href="spielregeln.html">Spielart</a>-->
   </div>
-  <div class="hand" aria-hidden="true">
-    <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
-    <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
-    <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
+    <div class="hand" id="hand" aria-hidden="true">
+      <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
+      <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
+      <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
   </div>
 </div></section>
 <main><div class="wrap">
@@ -49,5 +49,12 @@
   <span>© 2026 Riichi Mahjong Regensburg</span>
   <ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul>
 </div></footer>
+<script>
+  var tiles = document.querySelectorAll("#hand .tile");
+  if (tiles.length) {
+    var pick = tiles[Math.floor(Math.random() * tiles.length)];
+    pick.classList.add("raised");
+  }
+</script>
 </body>
 </html>

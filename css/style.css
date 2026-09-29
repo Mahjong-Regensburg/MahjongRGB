@@ -40,12 +40,13 @@ nav a[aria-current="page"]{border-color:var(--red)}
 .hero h1{font:700 clamp(2rem,5vw,3.4rem)/1.15 var(--font-display);margin:0 0 1rem}
 .hero p{max-width:34rem;margin:0 0 1.75rem;color:#d9d6c4}
 .hand{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
-.hand .tile:nth-child(2){transform:translateY(-.6rem)}
+.hand .tile.raised{transform:translateY(-.6rem)}
 .hand .tile svg{width:62%;height:auto}
 .btn{display:inline-block;padding:.7rem 1.4rem;border-radius:6px;background:var(--red);color:#fff;font-weight:700;text-decoration:none}
 .btn:hover{background:#a72f24}
 .btn.ghost{background:transparent;border:2px solid var(--tile);color:var(--tile);margin-left:.5rem}
 .btn.ghost:hover{background:var(--felt-2)}
+
 
 /* Content */
 main{padding-block:3rem 4rem}

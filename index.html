@@ -1,60 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Start – Riichi Mahjong Regensburg</title>
-<meta name="description" content="Riichi Mahjong spielen in Regensburg – Einsteiger willkommen.">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start – Riichi Mahjong Regensburg</title>
+  <meta name="description" content="Riichi Mahjong spielen in Regensburg – Einsteiger willkommen.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<header class="site-header"><div class="wrap">
-  <a class="brand" href="index.html"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wappen" viewBox="0 0 60 72"><path d="M5 5h50v33c0 16-12 26-25 31C17 64 5 54 5 38Z" fill="#c23b2e"/><g transform="rotate(45 30 34)"><g fill="none" stroke="#f1efe6" stroke-width="3" stroke-linecap="round"><circle cx="30" cy="14" r="4.5"/><path d="M30 19V50M30 42h6M30 47h4"/></g></g><g transform="translate(60 0) scale(-1 1) rotate(45 30 34)"><g fill="none" stroke="#f1efe6" stroke-width="3" stroke-linecap="round"><circle cx="30" cy="14" r="4.5"/><path d="M30 19V50M30 42h6M30 47h4"/></g></g></symbol></svg><span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>Riichi Regensburg</a>
-  <nav aria-label="Hauptnavigation">
-    <ul>
-      <li><a href="index.html" aria-current="page">Start</a>
-      </li><li><a href="termine.html">Termine</a></li>
-      <!-- </li><li><a href="spielregeln.html">Spielart</a></li>-->
-    </ul></nav>
-</div></header>
-<section class="hero"><div class="wrap">
-  <div>
-    <h1>Riichi Mahjong in Regensburg</h1>
-    <p>Herzlich willkommen! Wir spielen Riichi Mahjong, die japanische Variante des beliebten Strategiespiels, und freuen uns über jeden, der Lust hat, mitzuspielen. Schau einfach vorbei!</p>
-    <!-- <a class="btn" href="#join-h">Mitspielen</a> -->
-    <!-- <a class="btn ghost" href="spielregeln.html">Spielart</a>-->
-  </div>
-    <div class="hand" id="hand" aria-hidden="true">
-      <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
-      <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
-      <span class="tile"><svg viewBox="0 0 60 72"><use href="#wappen"/></svg></span>
-  </div>
-</div></section>
-<main><div class="wrap">
-<div class="facts">
-  <section class="fact"><h2>Für Einsteiger</h2><p>Du musst nichts können. Wir erklären dir die Regeln Schritt für Schritt und spielen die ersten Runden gemeinsam mit dir.</p></section>
-  <section class="fact"><h2>Regelmäßig</h2><p>Wir treffen uns regelmäßig. Die Termine findest du hier auf der Seite.</p></section>
-  <section class="fact"><h2>Kostenlos</h2><p>Mitspielen kostet nichts. Du bist herzlich eingeladen!</p></section>
-</div><section class="join" aria-labelledby="join-h">
-  <div class="qr">
-    <img src="img/line-qr.JPG" alt="QR-Code zur LINE-Gruppe">
-  </div>
-  <div>
-    <h2 id="join-h">Komm in die LINE-Gruppe</h2>
-    <p>QR-Code scannen oder <a href="https://line.me/ti/g/Vc6Uf7LknW">Einladungslink öffnen</a>. In der Gruppe sprechen wir Termine ab und beantworten gern deine Fragen. Wir freuen uns auf dich!</p>
-  </div>
-</section>
-</div></main>
-<footer class="site-footer"><div class="wrap">
-  <span>© 2026 Riichi Mahjong Regensburg</span>
-  <ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul>
-</div></footer>
-<script>
-  var tiles = document.querySelectorAll("#hand .tile");
-  if (tiles.length) {
-    var pick = tiles[Math.floor(Math.random() * tiles.length)];
-    pick.classList.add("raised");
-  }
-</script>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+          <symbol id="wappen" viewBox="0 0 60 72">
+            <path d="M5 5h50v33c0 16-12 26-25 31C17 64 5 54 5 38Z" fill="#c23b2e" />
+            <g transform="rotate(45 30 34)">
+              <g fill="none" stroke="#f1efe6" stroke-width="3" stroke-linecap="round">
+                <circle cx="30" cy="14" r="4.5" />
+                <path d="M30 19V50M30 42h6M30 47h4" />
+              </g>
+            </g>
+            <g transform="translate(60 0) scale(-1 1) rotate(45 30 34)">
+              <g fill="none" stroke="#f1efe6" stroke-width="3" stroke-linecap="round">
+                <circle cx="30" cy="14" r="4.5" />
+                <path d="M30 19V50M30 42h6M30 47h4" />
+              </g>
+            </g>
+          </symbol>
+        </svg><span class="tile"><svg viewBox="0 0 60 72">
+            <use href="#wappen" />
+          </svg></span>Riichi Regensburg</a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Start</a>
+          </li>
+          <li><a href="termine.html">Termine</a></li>
+          <!-- </li><li><a href="spielregeln.html">Spielart</a></li>-->
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Riichi Mahjong in Regensburg</h1>
+        <p>Herzlich willkommen! Wir spielen Riichi Mahjong, die japanische Variante des beliebten Strategiespiels, und
+          freuen uns über jeden, der Lust hat, mitzuspielen. Schau einfach vorbei!</p>
+        <!-- <a class="btn" href="#join-h">Mitspielen</a> -->
+        <!-- <a class="btn ghost" href="spielregeln.html">Spielart</a>-->
+      </div>
+      <div class="hand" id="hand" aria-hidden="true">
+        <span class="tile"><svg viewBox="0 0 60 72">
+            <use href="#wappen" />
+          </svg></span>
+        <span class="tile"><svg viewBox="0 0 60 72">
+            <use href="#wappen" />
+          </svg></span>
+        <span class="tile"><svg viewBox="0 0 60 72">
+            <use href="#wappen" />
+          </svg></span>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="wrap">
+      <div class="facts">
+        <section class="fact">
+          <h2>Für Einsteiger</h2>
+          <p>Du musst nichts können. Wir erklären dir die Regeln Schritt für Schritt und spielen die ersten Runden
+            gemeinsam mit dir.</p>
+        </section>
+        <section class="fact">
+          <h2>Regelmäßig</h2>
+          <p>Wir treffen uns regelmäßig. Die Termine findest du hier auf der Seite.</p>
+        </section>
+        <section class="fact">
+          <h2>Kostenlos</h2>
+          <p>Mitspielen kostet nichts. Du bist herzlich eingeladen!</p>
+        </section>
+      </div>
+      <section class="join" aria-labelledby="join-h">
+        <div class="qr">
+          <img src="img/line-qr.JPG" alt="QR-Code zur LINE-Gruppe">
+        </div>
+        <div>
+          <h2 id="join-h">Komm in die LINE-Gruppe</h2>
+          <p>QR-Code scannen oder <a href="https://line.me/ti/g/Vc6Uf7LknW">Einladungslink öffnen</a>. In der Gruppe
+            sprechen wir Termine ab und beantworten gern deine Fragen. Wir freuen uns auf dich!</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Riichi Mahjong Regensburg</span>
+      <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    var tiles = document.querySelectorAll("#hand .tile");
+    if (tiles.length) {
+      var pick = tiles[Math.floor(Math.random() * tiles.length)];
+      pick.classList.add("raised");
+    }
+  </script>
 </body>
+
 </html>
